@@ -70,3 +70,13 @@ def Intersection(a,b):
             r+=1
         u+=1
     PrintOutput(wheat)
+def Notln(a,b):
+    u=0
+    r=0
+    while u<len(a):
+        while r<len(a):
+            if a(u)==b(r):
+                del a[u]
+            r+=1 #ask if this will work
+        u+=1
+    PrintOutput(a)
