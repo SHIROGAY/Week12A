@@ -48,3 +48,14 @@ def ScoreFinder(a,b,c):
     else:
         hello="player not found"
         PrintOutput(hello)
+def Union(a,b):
+    u=0
+    r=0
+    while u<len(a):
+        while r<len(a):
+            if a(u)==b(r):
+                del b[r]
+            r+=1
+        u+=1
+    jello=a+b
+    PrintOutput(jello)
