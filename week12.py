@@ -59,3 +59,14 @@ def Union(a,b):
         u+=1
     jello=a+b
     PrintOutput(jello)
+def Intersection(a,b):
+    u=0
+    r=0
+    wheat=[]
+    while u<len(a):
+        while r<len(a):
+            if a(u)==b(r):
+                wheat.append(a[u])
+            r+=1
+        u+=1
+    PrintOutput(wheat)
