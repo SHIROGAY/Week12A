@@ -14,3 +14,22 @@ def UpdateString(a,b,c):
     alist=list(a.split(""))
     alist[c]=b
     PrintOutput(alist)
+def FindWordCount(a,b):
+    x=0
+    st=[ch for ch in b]
+    while x<len(a):
+        if a[x]==st[x]:
+            z=1
+            c=1
+            q=0
+            while q<len(b)-1:
+                if x+z>= len(a):
+                    my_confidence=0
+                elif a[x+z]:
+                    c+=1
+                z+=1
+                q+=1
+            if c== len(b):
+                n+=1
+        x+=1
+    PrintOutput(n)
