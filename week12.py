@@ -33,3 +33,18 @@ def FindWordCount(a,b):
                 n+=1
         x+=1
     PrintOutput(n)
+def ScoreFinder(a,b,c): 
+    yourmom=0
+    yourdad=0
+    t=0
+    if t<len(a):
+        if a[t]==c:
+            yourdad=b[t]
+            yourmom=1
+        t+=1
+    if yourmom==1:
+        hello=(c,", got a score of",yourdad)
+        PrintOutput(hello)
+    else:
+        hello="player not found"
+        PrintOutput(hello)
