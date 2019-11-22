@@ -1,3 +1,4 @@
+#https://github.com/SHIROGAY/Week12A.git
 #Aiden Reeves
 #CSCI 102- Section B
 #Week 12A
@@ -14,7 +15,7 @@ def UpdateString(a,b,c):
     alist=list(a.split(""))
     alist[c]=b
     PrintOutput(alist)
-def FindWordCount(a,b):
+def FindWordCount(a,b): 
     x=0
     st=[ch for ch in b]
     while x<len(a):
@@ -77,6 +78,6 @@ def Notln(a,b):
         while r<len(a):
             if a(u)==b(r):
                 del a[u]
-            r+=1 #ask if this will work
+            r+=1 
         u+=1
     PrintOutput(a)
