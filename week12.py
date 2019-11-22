@@ -10,3 +10,7 @@ def LoadFile(b):
         for line in ins:
             array.append(line)
     PrintOutput(array)
+def UpdateString(a,b,c):
+    alist=list(a.split(""))
+    alist[c]=b
+    PrintOutput(alist)
